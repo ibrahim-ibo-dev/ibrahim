@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaCode, FaMicrochip, FaRobot, FaBolt } from "react-icons/fa";
+import { FaCode, FaMicrochip, FaRobot, FaBolt, FaVideo, FaServer } from "react-icons/fa";
 import FloatingObject from "./FloatingObject";
 import AboutBackground from "./AboutBackground";
 
@@ -13,39 +13,53 @@ gsap.registerPlugin(ScrollTrigger);
 const highlights = [
   {
     icon: <FaCode className="text-lg" />,
-    title: "Software Development",
-    desc: "Proficient in Python, C++, and MatLab with strong skills in HTML and CSS.",
+    title: "Full-Stack Development",
+    desc: "Proficient in Python, C++, HTML/CSS, MySQL, and C# with hands-on web development experience.",
     color: "from-accent/20 to-accent/10",
     textColor: "text-accent",
   },
   {
-    icon: <FaMicrochip className="text-lg" />,
-    title: "Hardware & Arduino",
-    desc: "Building smart hardware systems with Arduino, sensors, and integrated circuits.",
+    icon: <FaRobot className="text-lg" />,
+    title: "AI & Machine Learning",
+    desc: "Building AI-powered apps including Kurdish language support, chatbots, and customer service AI platforms.",
     color: "from-accent/10 to-accent-light/20",
     textColor: "text-accent-light",
   },
   {
-    icon: <FaRobot className="text-lg" />,
-    title: "AI & Robotics",
-    desc: "Developing AI-powered solutions and robotics systems with a passion for automation.",
+    icon: <FaMicrochip className="text-lg" />,
+    title: "Hardware & IoT",
+    desc: "Creating smart systems with Arduino, sensors, drones, and integrated circuits for real-world solutions.",
     color: "from-accent-light/20 to-accent-light/10",
     textColor: "text-accent-light",
   },
   {
-    icon: <FaBolt className="text-lg" />,
-    title: "Innovation",
-    desc: "Pushing boundaries with innovative projects like drone control and speech-enabled gloves.",
+    icon: <FaVideo className="text-lg" />,
+    title: "Media Production",
+    desc: "Professional video editing with DaVinci Resolve, audio production with Adobe Audition and Audacity.",
     color: "from-accent-light/10 to-accent/20",
     textColor: "text-accent",
+  },
+  {
+    icon: <FaServer className="text-lg" />,
+    title: "System Administration",
+    desc: "Linux system admin, database management, technical support, and project leadership experience.",
+    color: "from-accent/15 to-accent-light/15",
+    textColor: "text-accent",
+  },
+  {
+    icon: <FaBolt className="text-lg" />,
+    title: "Innovation & Leadership",
+    desc: "Co-founded CSAI, supported 70+ members at NICER Club, and led multiple award-winning projects.",
+    color: "from-accent-light/15 to-accent/10",
+    textColor: "text-accent-light",
   },
 ];
 
 const stats = [
-  { value: "5+", label: "Languages" },
-  { value: "11+", label: "Projects" },
-  { value: "5+", label: "Achievements" },
-  { value: "2+", label: "Years Exp" },
+  { value: "6+", label: "Languages" },
+  { value: "10+", label: "Projects" },
+  { value: "9+", label: "Certificates" },
+  { value: "70+", label: "Members Supported" },
 ];
 
 export default function About() {
@@ -109,18 +123,19 @@ export default function About() {
           <div>
             <div className="about-reveal">
               <h3 className="text-2xl md:text-3xl font-semibold mb-6 leading-snug">
-                A passionate developer building{" "}
-                <span className="text-gradient">the future with AI &amp; Robotics</span>
+                A passionate engineer building{" "}
+                <span className="text-gradient">the future with AI &amp; Innovation</span>
               </h3>
               <p className="text-gray-400 leading-relaxed mb-4 text-[15px]">
-                I&apos;m a Computer Engineering student at a French university. Though a student, I am very
-                active both on campus and beyond. I also assist with projects in my college club&mdash;a space
-                where students develop innovative technology projects.
+                I&apos;m a Computer Engineering student at Lebanese French University in Erbil, Kurdistan Region.
+                Award-winning technical specialist (2nd Place at Salahaddin University Coding Competition) with
+                hands-on experience in AI-powered applications, video production, and digital marketing.
               </p>
               <p className="text-gray-400 leading-relaxed mb-8 text-[15px]">
-                I am proficient in programming languages such as Python, C++, and MatLab, and have strong skills
-                in HTML and CSS. Additionally, I have a great passion for developing AI and possess extensive
-                knowledge in data integration.
+                I support over 70 members at NICER Club with 30+ hardware and 40+ software/AI projects.
+                I co-founded CSAI (Customer Service AI) showcased at HITEX 2025, and successfully combined
+                technical innovation with creative marketing. Specialized in full-stack development, content creation,
+                and AI agent development.
               </p>
             </div>
 

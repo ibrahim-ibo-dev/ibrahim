@@ -9,12 +9,14 @@ import {
   FiPhone,
   FiSend,
   FiLinkedin,
+  FiGithub,
 } from "react-icons/fi";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const socials = [
   { icon: FiLinkedin, href: "https://linkedin.com/in/ibrahim-hussein", label: "LinkedIn" },
+  { icon: FiGithub, href: "https://github.com/imxoshnawm", label: "GitHub" },
 ];
 
 export default function Contact() {
@@ -156,7 +158,7 @@ export default function Contact() {
                   Email
                 </p>
                 <p className="text-sm text-white mt-0.5">
-                  hamasuan@gmail.com
+                  ibrahimhuseein842@gmail.com
                 </p>
               </div>
             </motion.div>

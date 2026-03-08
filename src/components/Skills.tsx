@@ -13,24 +13,33 @@ import {
   SiMysql,
   SiLinux,
   SiGithub,
+  SiSharp,
+  SiDavinciresolve,
+  SiAudacity,
 } from "react-icons/si";
-import { FaRobot, FaBrain } from "react-icons/fa";
+import { FaRobot, FaBrain, FaCamera, FaHeadphones } from "react-icons/fa";
 import FloatingObject from "./FloatingObject";
 import HolographicMesh from "./HolographicMesh";
 
 const skills = [
   { name: "Python", icon: <SiPython />, color: "#3776AB" },
   { name: "C++", icon: <SiCplusplus />, color: "#00599C" },
+  { name: "C#", icon: <SiSharp />, color: "#68217A" },
   { name: "HTML", icon: <SiHtml5 />, color: "#E34F26" },
   { name: "CSS", icon: <SiCss />, color: "#1572B6" },
+  { name: "MySQL", icon: <SiMysql />, color: "#4479A1" },
   { name: "Arduino", icon: <SiArduino />, color: "#00979D" },
-  { name: "Git", icon: <SiGit />, color: "#F05032" },
   { name: "AI / ML", icon: <FaBrain />, color: "#D4A574" },
   { name: "Robotics", icon: <FaRobot />, color: "#E8C9A0" },
   { name: "TensorFlow", icon: <SiTensorflow />, color: "#FF6F00" },
-  { name: "MySQL", icon: <SiMysql />, color: "#4479A1" },
-  { name: "Linux", icon: <SiLinux />, color: "#FCC624" },
+  { name: "DaVinci Resolve", icon: <SiDavinciresolve />, color: "#E44D26" },
+  { name: "Photoshop", icon: <FaCamera />, color: "#31A8FF" },
+  { name: "Audition", icon: <FaHeadphones />, color: "#9999FF" },
+  { name: "Audacity", icon: <SiAudacity />, color: "#0000CC" },
+  { name: "Git", icon: <SiGit />, color: "#F05032" },
   { name: "GitHub", icon: <SiGithub />, color: "#ffffff" },
+  { name: "Linux", icon: <SiLinux />, color: "#FCC624" },
+  { name: "MATLAB", icon: <FaBrain />, color: "#E16737" },
 ];
 
 export default function Skills() {
@@ -62,7 +71,7 @@ export default function Skills() {
           <div className="w-20 h-1 bg-gradient-to-r from-accent to-accent-light rounded-full mx-auto mt-6" />
         </motion.div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
           {skills.map((skill, i) => (
             <motion.div
               key={skill.name}

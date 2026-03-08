@@ -14,25 +14,49 @@ gsap.registerPlugin(ScrollTrigger);
 
 const experiences = [
   {
-    role: "Voice Work — Door Applications",
-    company: "Freelance",
+    role: "AI Developer & Technical Lead",
+    company: "HITEX 2025 — CSAI Project",
     location: "Kurdistan, Iraq",
-    period: "2024",
+    period: "2025",
     description:
-      "Produced nearly 30 voice books in less than 45 days, delivering high-quality audio content for door application systems within a tight deadline.",
-    technologies: ["Voice Production", "Audio Editing", "Content Creation"],
+      "Co-founded and presented CSAI (Customer Service AI) at HITEX 2025. Established a dedicated exhibition booth showcasing AI and web development projects. Demonstrated multiple AI-powered applications including Kurdish language support.",
+    technologies: ["AI", "Web Dev", "Exhibition", "Kurdish NLP"],
     color: "#D4A574",
     borderColor: "border-accent/30",
     bgColor: "bg-accent/5",
   },
   {
-    role: "Content Creator",
-    company: "Mars Labs / Diwaxan Podcast",
+    role: "Tech Supporter & Project Manager",
+    company: "NICER Club",
+    location: "Kurdistan, Iraq",
+    period: "2024 — Present",
+    description:
+      "Supported over 70 members and 30+ hardware and 40+ software/AI projects within NICER Club — a non-profit youth technology organization. Assisted students in developing AI, robotics, and software ideas into real projects.",
+    technologies: ["Leadership", "AI", "Robotics", "Mentoring"],
+    color: "#E8C9A0",
+    borderColor: "border-accent-light/30",
+    bgColor: "bg-accent-light/5",
+  },
+  {
+    role: "Audiobook Producer & Editor",
+    company: "Dargakan Application",
     location: "Kurdistan, Iraq",
     period: "2024",
     description:
-      "Created video content and collaborated with HITX teams as part of the Mars Labs and Diwaxan Podcast initiative, contributing to multimedia production and creative direction.",
-    technologies: ["Video Production", "Content Strategy", "Collaboration"],
+      "Produced more than 40 audiobooks in 45 days. Managed 13-hour daily work schedules. Enhanced sound quality and maintained production standards. Edited and cleaned 30 audiobooks.",
+    technologies: ["Audio Production", "Editing", "Quality Control"],
+    color: "#D4A574",
+    borderColor: "border-accent/30",
+    bgColor: "bg-accent/5",
+  },
+  {
+    role: "Videographer & Content Creator",
+    company: "Diwaxan Podcast / Mars Labs",
+    location: "Kurdistan, Iraq",
+    period: "2024",
+    description:
+      "Created social media content and short podcast videos. Participated in HITEX 2024 events as a member of the podcast team. Edited and published 13 videos in less than 5 days.",
+    technologies: ["Video Production", "Social Media", "DaVinci Resolve"],
     color: "#E8C9A0",
     borderColor: "border-accent-light/30",
     bgColor: "bg-accent-light/5",

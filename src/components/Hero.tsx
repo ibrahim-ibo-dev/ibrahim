@@ -75,7 +75,7 @@ export default function Hero() {
           className="text-[10px] sm:text-xs uppercase tracking-[0.4em] text-accent/60 mb-4 font-medium"
           style={{ opacity: 0 }}
         >
-          Software Developer &bull; AI/Robotics Expert
+          Computer Engineer &bull; AI Developer &bull; Full web Stack Developer &bull; Robotics Enthusiast
         </p>
 
         <h1
@@ -99,7 +99,7 @@ export default function Hero() {
           className="text-sm md:text-base text-gray-400 max-w-lg mx-auto leading-relaxed mb-10"
           style={{ opacity: 0 }}
         >
-          Computer Engineering student at a French university, constantly pushing the boundaries of science and technology.
+          Innovative Computer Engineering student with expertise in AI-powered applications, full-stack development, and digital content creation. Award-winning technical specialist.
         </p>
 
         {/* CTA buttons */}

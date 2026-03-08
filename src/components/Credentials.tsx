@@ -5,31 +5,58 @@ import { motion, useInView } from "framer-motion";
 
 const credentials = [
   {
+    badge: "// Competition",
+    title: "2nd Place — Salahaddin University Coding Competition",
+    subtitle: "Programming Achievement",
+    text:
+      "Achieved 2nd place in the coding competition at Salahaddin University, demonstrating strong algorithmic thinking and problem-solving skills under pressure.",
+    accent: "from-accent/20 to-accent-light/10",
+    dot: "bg-accent",
+  },
+  {
+    badge: "// Cybersecurity",
+    title: "1st Place — Kurdistan Region CTF Competition (Both Levels)",
+    subtitle: "Security Achievement",
+    text:
+      "Won 1st place in the Kurdistan Region CTF Competition across both levels. Also achieved Global Rankings 477 & 33 in the Cyber CTF Challenge on HackTheBox at international level.",
+    accent: "from-accent-light/20 to-accent/10",
+    dot: "bg-accent-light",
+  },
+  {
+    badge: "// Programming",
+    title: "C++ Mastering Functions — CodeSignal",
+    subtitle: "Certification · December 2024",
+    text:
+      "Earned the Mastering Functions in C++ certificate from CodeSignal. Also reached Level 7 (out of 35 participants) in the national CodeX Programming Examination across Iraq.",
+    accent: "from-accent/20 to-accent/10",
+    dot: "bg-accent",
+  },
+  {
+    badge: "// AI",
+    title: "1st Place — AI Projects Training Course (LFU)",
+    subtitle: "AI Achievement",
+    text:
+      "Obtained first place in AI projects at the AI Training Course at Lebanese French University (August 3–21, 2025). Demonstrated excellence in AI application development.",
+    accent: "from-accent-light/20 to-accent-light/10",
+    dot: "bg-accent-light",
+  },
+  {
+    badge: "// Projects",
+    title: "Certificates of Appreciation — CIHAN & TIU Universities",
+    subtitle: "Project Recognition",
+    text:
+      "Received Certificates of Appreciation from CIHAN University (Handy Flyer Project), TIU University (Smart Home System & Chess AI Project), and NICER Club at LFU (Home System Project).",
+    accent: "from-accent/15 to-accent-light/15",
+    dot: "bg-accent",
+  },
+  {
     badge: "// Boxing",
     title: "1st Place — Iraq & Kurdistan Boxing Tournaments",
     subtitle: "Sports Achievement",
     text:
       "Earned 1st place in both the Iraq Boxing Tournament and the Kurdistan Boxing Tournament, demonstrating dedication, discipline, and competitive excellence.",
-    accent: "from-accent-light/20 to-accent/10",
+    accent: "from-accent-light/15 to-accent/10",
     dot: "bg-accent-light",
-  },
-  {
-    badge: "// Cybersecurity",
-    title: "Cyber CTF Challenge on HackTheBox",
-    subtitle: "Technical Achievement",
-    text:
-      "Captured 31 flags in the Cyber CTF Challenge on HTB and led my university to be ranked as the top institution among all Iraqi universities participating in the competition.",
-    accent: "from-accent/20 to-accent-light/10",
-    dot: "bg-accent",
-  },
-  {
-    badge: "// Programming",
-    title: "Level 7 in CodeX Challenge",
-    subtitle: "National Achievement · Iraq",
-    text:
-      "Reached Level 7 in the CodeX national programming challenge across Iraq. Also mastered Functions in C++ on Code Signal, demonstrating strong algorithmic and problem-solving skills.",
-    accent: "from-accent/20 to-accent/10",
-    dot: "bg-accent",
   },
 ];
 
@@ -68,7 +95,7 @@ export default function Credentials() {
         </motion.div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {credentials.map((item, i) => (
             <motion.div
               key={item.title}

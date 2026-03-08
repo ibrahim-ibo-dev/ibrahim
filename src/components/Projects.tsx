@@ -15,33 +15,55 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    title: "Home System",
+    title: "CSAI — Customer Service AI",
     description:
-      "A hardware project built with Arduino and various sensors. By combining five small projects, it creates a smart home system providing several smart home functionalities to simplify everyday life.",
-    tags: ["Arduino", "Hardware", "DIY", "Sensors"],
+      "Full-stack AI-powered customer service platform with discount management, product catalog, and admin dashboard. Showcased at HITEX 2025 with positive reception. Supports Kurdish language.",
+    tags: ["AI", "Full-Stack", "Next.js", "Python"],
     image: "/images/project-home.jpg",
     github: "#",
-    live: "#",
+    live: "https://customerservicesai.wuaze.com",
     gradient: "from-accent/30 to-accent/15",
     status: "Completed",
   },
   {
-    title: "Water Level Monitoring System",
+    title: "Ashti Library",
     description:
-      "Monitors water tank levels in real time. Sounds an alarm when the level drops below 15% or rises above 80%. Displays the current level with a progress bar for at-a-glance monitoring.",
-    tags: ["Arduino", "Hardware", "DIY", "Sensors"],
-    image: "/images/project-water.jpg",
+      "Complete Kurdish bookstore website with search/filtering, admin dashboard, AI chatbot using Google Gemini API for recommendations, RTL Kurdish support, and WhatsApp ordering integration.",
+    tags: ["Web", "AI", "Gemini API", "RTL"],
+    image: "/images/project-school.jpg",
+    github: "#",
+    live: "https://ashtilibrary.com",
+    gradient: "from-accent/30 to-accent-light/20",
+    status: "Completed",
+  },
+  {
+    title: "ID Kurdm — AI Platform",
+    description:
+      "A comprehensive AI API implementation project. Mastered full AI API integration, large-scale project management, and advanced AI agent creation and deployment.",
+    tags: ["AI", "API", "Python", "Agents"],
+    image: "/images/project-face.jpg",
+    github: "https://github.com/imxoshnawm/ID_Kurdm_AI",
+    live: "https://imxoshnawm.github.io/ID_Kurdm_AI",
+    gradient: "from-accent-light/30 to-accent/20",
+    status: "Completed",
+  },
+  {
+    title: "Home System",
+    description:
+      "Smart home system built with Arduino and sensors. Integrates five mini-projects into one comprehensive system providing smart home functionalities to simplify everyday life.",
+    tags: ["Arduino", "Hardware", "IoT", "Sensors"],
+    image: "/images/project-home.jpg",
     github: "#",
     live: "#",
     gradient: "from-accent/30 to-accent-light/20",
     status: "Completed",
   },
   {
-    title: "School System",
+    title: "Water Level Monitoring",
     description:
-      "An integrated system for managing school operations. Developed the front-end login and registration pages and integrated the database with the website logic. Graduation project in the third year of studies.",
-    tags: ["Web", "Database Integration", "HTML", "CSS"],
-    image: "/images/project-school.jpg",
+      "Real-time water tank monitoring system. Alerts when level drops below 15% or rises above 80%. Displays current level with progress bar for at-a-glance monitoring.",
+    tags: ["Arduino", "Hardware", "Sensors"],
+    image: "/images/project-water.jpg",
     github: "#",
     live: "#",
     gradient: "from-accent-light/30 to-accent/20",
@@ -50,7 +72,7 @@ const projects = [
   {
     title: "Hand Drones",
     description:
-      "A drone with a range of over 1.2 km, controlled manually using gyroscopic technology instead of a traditional joystick. Frame is built and code is ready; awaiting specific components from suppliers.",
+      "Drone with 1.2km+ range controlled via gyroscopic technology instead of traditional joystick. Frame built and code ready, awaiting specific ESP and Motor 180 components.",
     tags: ["Drone", "Hardware", "Gyroscope", "ESP"],
     image: "/images/project-drone.jpg",
     github: "#",
@@ -61,8 +83,8 @@ const projects = [
   {
     title: "Face Track Pro",
     description:
-      "An automated attendance system using AI to record student and teacher presence via a classroom-installed camera. Redesigning with a custom-trained AI model for improved accuracy.",
-    tags: ["AI", "Automation", "Python", "OpenCV"],
+      "AI-powered automated attendance system using classroom cameras. Redesigning with custom-trained AI model for improved accuracy. For students, teachers, and company employees.",
+    tags: ["AI", "Python", "OpenCV", "Automation"],
     image: "/images/project-face.jpg",
     github: "#",
     live: "#",
@@ -72,12 +94,23 @@ const projects = [
   {
     title: "Glove Talk",
     description:
-      "A speech-enabled glove designed to convert sign language into speech and text, enabling direct communication for the hearing impaired. Addressing the needs of ~250,000 people in Kurdistan and Iraq.",
-    tags: ["Robotics", "AI", "Programming", "Hardware"],
+      "Speech-enabled glove converting sign language to speech and text. Addressing communication needs of ~250,000 people in Kurdistan and Iraq with hearing/speech difficulties.",
+    tags: ["Robotics", "AI", "Hardware", "NLP"],
     image: "/images/project-glove.jpg",
     github: "#",
     live: "#",
     gradient: "from-accent/30 to-accent/15",
+    status: "Conceptualized",
+  },
+  {
+    title: "AI Social Media Responder",
+    description:
+      "Self-trained AI system that responds to customer inquiries for companies, providing details about company profiles and product pricing based on learned information.",
+    tags: ["AI", "NLP", "Automation", "API"],
+    image: "/images/project-school.jpg",
+    github: "#",
+    live: "#",
+    gradient: "from-accent-light/30 to-accent/15",
     status: "Conceptualized",
   },
 ];

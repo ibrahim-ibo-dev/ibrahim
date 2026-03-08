@@ -1,18 +1,18 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 const navLinks = [
-  { href: "#about", label: "About Me" },
+  { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#credentials", label: "Achievements" },
-  { href: "#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
   const navRef = useRef<HTMLElement>(null);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     gsap.fromTo(
@@ -20,73 +20,53 @@ export default function Navbar() {
       { y: -60, opacity: 0 },
       { y: 0, opacity: 1, duration: 0.9, ease: "power3.out", delay: 1.2 }
     );
+
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <header
       ref={navRef}
       style={{ opacity: 0 }}
-      className="fixed top-4 left-1/2 z-50 flex -translate-x-1/2 justify-center"
+      className="fixed top-0 left-0 right-0 z-50 flex justify-center pointer-events-none"
     >
       <div
-        style={{
-          minWidth: "min(350px, 88vw)",
-          maxWidth: "min(360px, 88vw)",
-          WebkitTapHighlightColor: "transparent",
-        }}
-        className="flex w-[88vw] items-center justify-between gap-6 rounded-full border border-white/10 bg-white/5 backdrop-blur-md px-4 py-2.5 select-none"
+        className={`pointer-events-auto flex items-center gap-1 sm:gap-2 mt-4 rounded-full border select-none transition-all duration-500 px-2 py-1.5 sm:px-3 sm:py-2 ${
+          scrolled
+            ? "border-accent/15 bg-black/60 backdrop-blur-xl shadow-lg shadow-accent/5"
+            : "border-white/[0.06] bg-white/[0.03] backdrop-blur-md"
+        }`}
       >
         {/* Logo */}
         <a
           href="#hero"
-          className="flex items-center gap-2 text-sm font-medium"
-          style={{ WebkitTapHighlightColor: "transparent" }}
+          className="flex items-center gap-1.5 shrink-0 rounded-full px-2.5 py-1 sm:px-3 sm:py-1.5 bg-accent/10 border border-accent/20 transition-colors hover:bg-accent/20"
         >
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-accent/10 border border-accent/40 text-[12px] font-semibold">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 48 48"
-              aria-hidden="true"
-              focusable="false"
-              className="text-accent"
-            >
-              <g
-                fill="currentColor"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="4"
-              >
-                <path d="m24 27l-10-6l-10 6v12l10 6l10-6zm20 0l-10-6l-10 6v12l10 6l10-6z" />
-                <path d="M34 9L24 3L14 9v12l10 6l10-6z" />
-              </g>
-            </svg>
-          </span>
-          <span className="text-[13px] text-white">Ibrahim</span>
+          <span className="text-[11px] sm:text-xs font-semibold text-accent tracking-wide uppercase">IH</span>
         </a>
 
         {/* Nav links */}
-        <nav className="flex items-center gap-2 text-xs sm:text-sm text-gray-400">
+        <nav className="flex items-center">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              style={{ WebkitTapHighlightColor: "transparent" }}
-              className="rounded-full px-3 py-1.5 hover:bg-accent/10 hover:text-white hover:border-accent/30 border border-transparent transition-colors"
+              className="whitespace-nowrap rounded-full px-2 py-1 sm:px-3 sm:py-1.5 text-[10px] sm:text-[13px] text-gray-400 hover:text-white hover:bg-white/[0.06] transition-all duration-300"
             >
               {link.label}
             </a>
           ))}
-          <a
-            href="#"
-            style={{ WebkitTapHighlightColor: "transparent" }}
-            className="rounded-full px-3 py-1.5 bg-accent/20 hover:bg-accent/30 text-accent hover:text-white border border-accent/30 transition-colors"
-          >
-            View CV
-          </a>
         </nav>
+
+        {/* CTA */}
+        <a
+          href="#contact"
+          className="whitespace-nowrap rounded-full px-2.5 py-1 sm:px-4 sm:py-1.5 text-[10px] sm:text-[13px] font-medium bg-gradient-to-r from-accent to-accent-light text-primary transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 hover:scale-105"
+        >
+          Contact
+        </a>
       </div>
     </header>
   );

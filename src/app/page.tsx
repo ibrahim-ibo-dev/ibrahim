@@ -19,23 +19,26 @@ export default function Home() {
       <CurvedText />
       <ScrollTypography
         lines={[
-          "PYTHON · C++ · AI · ROBOTICS · HARDWARE · PYTHON · C++ · AI ·",
-          "BUILD · INNOVATE · DEVELOP · AUTOMATE · BUILD · INNOVATE ·",
+          "PYTHON · C++ · REACT · FLUTTER · NEXT.JS · TYPESCRIPT · PYTHON · C++ · REACT ·",
+          "BUILD · INNOVATE · DEVELOP · AUTOMATE · DEPLOY · BUILD · INNOVATE ·",
+          "ARDUINO · AI · MACHINE LEARNING · DRONES · FLUTTER · ARDUINO · AI ·",
         ]}
       />
       <About />
       <ScrollTypography
         lines={[
-          "ARDUINO · AI · MACHINE LEARNING · DRONES · ARDUINO · AI ·",
-          "PYTHON · C++ · HTML · CSS · MATLAB · PYTHON · C++ · HTML ·",
+          "REACT · NEXT.JS · TAILWIND · NODE.JS · GSAP · THREE.JS · REACT · NEXT.JS ·",
+          "PYTHON · C++ · HTML · CSS · MATLAB · FLUTTER · PYTHON · C++ · HTML ·",
+          "TENSORFLOW · PYTORCH · OPENCV · FIREBASE · TENSORFLOW · PYTORCH ·",
         ]}
       />
       <Skills />
       <Projects />
       <ScrollTypography
         lines={[
-          "INNOVATE · SHIP · GROW · REPEAT · INNOVATE · SHIP · GROW ·",
-          "AI · ROBOTICS · HARDWARE · SOFTWARE · AI · ROBOTICS ·",
+          "INNOVATE · SHIP · GROW · REPEAT · LEARN · ITERATE · INNOVATE · SHIP ·",
+          "AI · ROBOTICS · HARDWARE · SOFTWARE · FLUTTER · WEB · AI · ROBOTICS ·",
+          "FULL STACK · EMBEDDED · VISION · NLP · FULL STACK · EMBEDDED ·",
         ]}
       />
       <Experience />

@@ -23,7 +23,8 @@ export default function ScrollTypography({ lines, className = "" }: Props) {
 
     textLines.forEach((line, i) => {
       const direction = i % 2 === 0 ? -1 : 1;
-      const scaleTarget = i === 1 ? 1.05 : 1;
+      const scaleTargets = [1, 1.05, 0.97];
+      const scaleTarget = scaleTargets[i % scaleTargets.length];
 
       const anim = gsap.fromTo(
         line,
@@ -57,7 +58,7 @@ export default function ScrollTypography({ lines, className = "" }: Props) {
           className="scroll-line whitespace-nowrap text-[clamp(2.5rem,7vw,6.5rem)] font-black tracking-tight leading-[1.1] mb-1"
           style={{
             color: "transparent",
-            WebkitTextStroke: `1px rgba(212, 165, 116, ${0.18 + i * 0.06})`,
+            WebkitTextStroke: `1px rgba(212, 165, 116, ${0.15 + i * 0.07})`,
           }}
         >
           {line}

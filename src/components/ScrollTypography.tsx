@@ -57,7 +57,7 @@ export default function ScrollTypography({ lines, className = "" }: Props) {
           className="scroll-line whitespace-nowrap text-[clamp(2.5rem,7vw,6.5rem)] font-black tracking-tight leading-[1.1] mb-1"
           style={{
             color: "transparent",
-            WebkitTextStroke: `1px rgba(212, 165, 116, ${0.04 + i * 0.01})`,
+            WebkitTextStroke: `1px rgba(212, 165, 116, ${0.18 + i * 0.06})`,
           }}
         >
           {line}
